@@ -1,5 +1,5 @@
 # Intro to Javascript Assessments
-
+This is a random sentence
 Answer these questions, then follow the instructions to submit your first assessment!
 
 #### 1. What is a function? Why would you use one?
