@@ -57,9 +57,12 @@ if (imLost || imFrustrated) {
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
-for(let i=0; i<mantra.length(); i++){
- console.log(i)
+
+
+for(let i=0; i<mantra.length; i++){
+    console.log(mantra.charAt(i))
 }
+
 // Stretch: Using a while loop.
 
 // Super Stretch: Using forEach().
@@ -69,6 +72,16 @@ for(let i=0; i<mantra.length(); i++){
 var message = "thisisateststring"
 
 // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+ 
+ function noVowels(arg) { 
+     if(typeof arg === 'string'){
+         return arg.replace(/[aeiou]/gi,'')
+     } else {
+         return "This is not a string"
+     }
+     
+}
+console.log(noVowels(message))
 
 // Stretch: Update your function to throw an exception if the argument is not a string.
 
@@ -79,3 +92,15 @@ var message = "thisisateststring"
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
 
 // 8. Write a function that takes an array like toonimals and returns an array with only the toons that are cats.
+
+function animals(arg) {
+    var newArr = []
+    for(let i=0;i<arg.length;i++){
+         if(arg.indexOf(0).animal == 'cat'){
+        return newArr.push(arg[i])
+    } else {
+        return "no cat"
+}
+}
+}
+console.log(animals(toonimals))
