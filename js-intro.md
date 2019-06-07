@@ -16,7 +16,7 @@ A method is a property containing a function definition.
 Mutator methods mutate, or permanently change the array, where as accessor methods return a new value but do not permanently change the original array.  
 
 #### 5. Explain the differences between console.log() and return. Why would you use one over the other?
-Return ends the function and returns a value as a result of the function being called. Console.log is used to print, or log, a datatype to our terminal. 
+Return ends the function and returns a value as a result of the function being called. return does NOT log the value to the console. Console.log is used to print, or log, a datatype to our terminal. 
 
 #### 6. What is one thing we did in class this week that helped you learn the most?  
 This assessment has been very helpful because it has forced me to work through problems on my own. 
