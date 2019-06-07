@@ -23,7 +23,7 @@ if(mantra.indexOf("x") > 1){
 if(mantra.indexOf("v") > 1){
     console.log(true)
 } else {
-    console.log("x is not in the string")
+    console.log("v is not in the string")
 }
 
 // Stretch: Write the code that returns the position of 'v' in mantra.
@@ -72,6 +72,7 @@ for(let i=0; i<mantra.length; i++){
 var message = "thisisateststring"
 
 // 7. Write a function that takes a string like message as an argument and returns the string without vowels.
+// Stretch: Update your function to throw an exception if the argument is not a string.
  
  function noVowels(arg) { 
      if(typeof arg === 'string'){
@@ -82,8 +83,6 @@ var message = "thisisateststring"
      
 }
 console.log(noVowels(message))
-
-// Stretch: Update your function to throw an exception if the argument is not a string.
 
 // Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
 
@@ -96,11 +95,9 @@ var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'ca
 function animals(arg) {
     var newArr = []
     for(let i=0;i<arg.length;i++){
-         if(arg.indexOf(0).animal == 'cat'){
-        return newArr.push(arg[i])
-    } else {
-        return "no cat"
-}
-}
+         if(arg[i].animal === 'cat'){
+         newArr.push(arg[i])
+    } 
+} return newArr
 }
 console.log(animals(toonimals))
